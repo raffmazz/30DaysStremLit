@@ -1,18 +1,19 @@
 import streamlit as st
 
-st.header('st.button')
+st.header("st.sliders")
 
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
+age = st.slider("how old are you?", 0,120,30)
+st.write(f"**I** am **{age}** old")
 
 
-button_clicked = st.button('click me')
-st.write(f"Button clicked: {button_clicked}")
+st.subheader("Range Slider")
 
-if button_clicked:
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
+st.slider("blablabla",
+          0,
+          100,
+          (20,80)
+          )
+
+
+
 
